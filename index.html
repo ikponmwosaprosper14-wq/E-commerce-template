@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurum — Luxury Store</title>
+  <meta name="description" content="Luxury and premium e-commerce marketing website for high-end brands." />
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Playfair Display',serif}
+    body{background:#0b0b0b;color:#e5e5e5;line-height:1.6}
+    a{text-decoration:none;color:inherit}/* Header */
+header{padding:25px 60px;position:sticky;top:0;background:rgba(0,0,0,0.85);backdrop-filter:blur(8px);z-index:10}
+nav{display:flex;justify-content:space-between;align-items:center}
+nav h1{letter-spacing:2px;font-size:22px}
+nav a{margin-left:28px;font-size:14px;letter-spacing:1px;color:#d4af37}
+
+/* Hero */
+.hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),url('https://via.placeholder.com/1600x900') center/cover}
+.hero h2{font-size:58px;margin-bottom:20px;letter-spacing:2px}
+.hero p{max-width:600px;margin:0 auto 40px;font-size:18px;color:#cfcfcf}
+.btn{padding:14px 34px;border:1px solid #d4af37;color:#d4af37;font-size:14px;letter-spacing:2px}
+.btn:hover{background:#d4af37;color:#000;transition:.4s}
+
+/* About */
+.section{padding:100px 60px;max-width:1200px;margin:auto}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about img{width:100%;border-radius:8px}
+.section h3{font-size:36px;margin-bottom:20px}
+.section p{color:#b5b5b5}
+
+/* Products */
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;margin-top:60px}
+.product{background:#111;padding:25px;border:1px solid #222}
+.product img{width:100%;margin-bottom:20px}
+.product h4{font-size:20px;margin-bottom:10px}
+.price{color:#d4af37;font-weight:600;margin-bottom:20px}
+
+/* CTA */
+.cta{background:#000;text-align:center;padding:120px 20px}
+.cta h3{font-size:42px;margin-bottom:25px}
+.cta p{color:#b5b5b5;margin-bottom:40px}
+
+/* Footer */
+footer{border-top:1px solid #222;padding:30px;text-align:center;color:#777;font-size:13px}
+
+@media(max-width:900px){
+  .hero h2{font-size:40px}
+  .about{grid-template-columns:1fr}
+  header{padding:20px}
+}
+
+  </style>
+</head>
+<body><header>
+  <nav>
+    <h1>AURUM</h1>
+    <div>
+      <a href="#about">Story</a>
+      <a href="#products">Collection</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header><section class="hero">
+  <div>
+    <h2>Luxury That Speaks Quality</h2>
+    <p>Experience premium craftsmanship, timeless elegance, and products designed for those who value excellence.</p>
+    <a href="#products" class="btn">VIEW COLLECTION</a>
+  </div>
+</section><section id="about" class="section">
+  <div class="about">
+    <div>
+      <h3>Crafted for the Elite</h3>
+      <p>Our products are carefully designed with premium materials, blending modern sophistication with classic luxury. Every detail reflects excellence and prestige.</p>
+    </div>
+    <img src="https://via.placeholder.com/600x500" alt="Luxury product" />
+  </div>
+</section><section id="products" class="section">
+  <h3 style="text-align:center">Signature Collection</h3>
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/400x350" />
+      <h4>Luxury Wrist Watch</h4>
+      <p class="price">₦250,000</p>
+      <a class="btn" href="#">BUY NOW</a>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/400x350" />
+      <h4>Premium Leather Bag</h4>
+      <p class="price">₦180,000</p>
+      <a class="btn" href="#">BUY NOW</a>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/400x350" />
+      <h4>Designer Sunglasses</h4>
+      <p class="price">₦95,000</p>
+      <a class="btn" href="#">BUY NOW</a>
+    </div>
+  </div>
+</section><section class="cta" id="contact">
+  <h3>Luxury Begins With a Choice</h3>
+  <p>Own something exceptional today. Crafted to stand out.</p>
+  <a href="mailto:your@email.com" class="btn">CONTACT CONCIERGE</a>
+</section><footer>
+  © 2026 AURUM Luxury Store. All rights reserved.
+</footer></body>
+</html>
